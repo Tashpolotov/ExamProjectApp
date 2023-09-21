@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:layout_margin="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_cplus"
+        android:layout_width="360dp"
+        android:layout_height="130dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="14dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_questions_prosto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/questions"
+            android:textSize="25sp"
+            android:textColor="@color/onBoard_text_color"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_questions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/questions1"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/onBoard_text_color"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="50dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_a"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/card_cplus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="14dp"
+        android:backgroundTint="@color/white"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/liner_a"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/a"
+                android:textColor="@color/onBoard_text_color"
+                android:textSize="16sp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_answer_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/answer1"
+                android:textColor="@color/onBoard_text_color"
+                android:textSize="14sp"
+                android:layout_marginStart="10dp"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_b"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/card_a"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="14dp"
+        android:backgroundTint="@color/white"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/liner_b"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/b"
+                android:textColor="@color/onBoard_text_color"
+                android:textSize="16sp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_answer_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/answer_2"
+                android:textColor="@color/onBoard_text_color"
+                android:textSize="14sp"
+                android:layout_marginStart="10dp"/>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_c"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/card_b"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="14dp"
+        android:backgroundTint="@color/white"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/liner_c"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/c"
+                android:textColor="@color/onBoard_text_color"
+                android:textSize="16sp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_answer_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/answer_3"
+                android:textColor="@color/onBoard_text_color"
+                android:textSize="14sp"
+                android:layout_marginStart="10dp"/>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_d"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/card_c"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="14dp"
+        android:backgroundTint="@color/white"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/liner_d"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/d"
+                android:textColor="@color/onBoard_text_color"
+                android:textSize="16sp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_answer_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/answer_4"
+                android:textColor="@color/onBoard_text_color"
+                android:textSize="14sp"
+                android:layout_marginStart="10dp"/>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

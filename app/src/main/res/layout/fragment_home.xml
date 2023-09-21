@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg"
+    tools:context=".fragments.HomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nesc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:orientation="horizontal"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/img_search"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="20dp"
+                    android:layout_margin="20dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/et_search"
+                    android:src="@drawable/ic_searc"/>
+
+                <EditText
+                    android:id="@+id/et_search"
+                    android:layout_width="0dp"
+                    android:layout_weight="7.0"
+                    android:layout_height="match_parent"
+                    android:hint="@string/search_exam_test"
+                    android:textStyle="bold"
+                    android:textColor="@color/onBoard_text_color"
+                    android:textColorHint="@color/search_color"
+                    android:padding="8dp"
+                    android:layout_marginStart="14dp"
+
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_here_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/linear1"
+                app:layout_constraintStart_toStartOf="@id/linear1"
+                android:layout_marginTop="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="150dp"
+                android:text="@string/here_your_progress_last_week"
+                android:textSize="18sp"
+                android:textColor="@color/onBoard_text_color"
+                android:textStyle="bold"
+
+                />
+
+            <LinearLayout
+                android:id="@+id/linear_2"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_here_progress"
+                app:layout_constraintStart_toStartOf="@id/tv_here_progress"
+                android:orientation="horizontal"
+                android:background="@drawable/shape_home_fragment"
+                android:layout_marginTop="10dp"
+
+
+
+                >
+
+
+                <TextView
+                    android:id="@+id/tv_user_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/you_are_95_faster"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shape_linear_to_linear">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/img_home_human1"
+                        android:scaleType="centerCrop"
+                        android:layout_marginStart="8dp"
+
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_today_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/linear_2"
+                app:layout_constraintStart_toStartOf="@id/linear1"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="300dp"
+                android:text="@string/today_test"
+                android:textSize="18sp"
+                android:textColor="@color/onBoard_text_color"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tv_here_today_test_for_you"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tv_today_test"
+                app:layout_constraintStart_toStartOf="@id/tv_today_test"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="150dp"
+                android:text="@string/here_is_your_test_list_for_today"
+                android:textSize="18sp"
+                android:textColor="@color/unselected_icon_color"
+                android:textStyle="bold"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tv_here_today_test_for_you"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                tools:listitem="@layout/item_home1"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_last_exam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/rv_1"
+                app:layout_constraintStart_toStartOf="@id/linear1"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="250dp"
+                android:text="@string/last_exam_done"
+                android:textSize="18sp"
+                android:textColor="@color/onBoard_text_color"
+                android:textStyle="bold"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="vertical"
+                tools:listitem="@layout/item_home2"
+                android:layout_marginTop="630dp"
+
+
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

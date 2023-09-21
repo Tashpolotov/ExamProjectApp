@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="math_final_exam">Math Final Exam</string>
+    <string name="minutes">10 minutes</string>
+    <string name="biology_daily_quiz">Biology daily quiz</string>
+    <string name="chemistry_final_test">Chemistry final test</string>
+    <string name="physics_daily_quiz">Physics daily quiz</string>
+    <string name="math_daily_quiz">Math daily quiz</string>
+    <string name="literature_final_exam">Literature final exam</string>
+    <string name="qestions1">What is 3 + 7?</string>
+    <string name="questions2">Solve for x: 2x - 4 = 6.</string>
+    <string name="questions3">What is the area of a square with side length 5?</string>
+    <string name="questions4">Find the value of π (pi) to two decimal places.</string>
+    <string name="questions5">What is the square root of 16?</string>
+    <string name="questions6">Solve for y: 2y - 3 = 9.</string>
+    <string name="questions7">What is 8 divided by 2?</string>
+    <string name="questions8">Find the area of a rectangle with length 6 and width 4.</string>
+    <string name="questions9">What is 10% of 80?</string>
+    <string name="questions10">Simplify the expression: 2(3x + 4) - 5(2x - 1).</string>
+    <string name="biologiQuestions1">What is the process by which plants make their own food using sunlight?</string>
+    <string name="biologiQuestions2">What is the powerhouse of the cell?</string>
+    <string name="biologiQuestions3">Which gas do plants absorb from the atmosphere during photosynthesis?</string>
+    <string name="biologiQuestions4">What is the largest organ in the human body?</string>
+    <string name="biologiQuestions5">Which blood type is known as the universal donor?</string>
+    <string name="biologiQuestions6">What is the chemical symbol for water?</string>
+    <string name="biologiQuestions7">Which gas do humans inhale during respiration?</string>
+    <string name="biologiQuestions8">What is the primary function of red blood cells?</string>
+    <string name="biologiQuestions9">Which part of a plant anchors it to the soil and absorbs water and nutrients?</string>
+    <string name="biologiQuestions10">What is the basic unit of heredity in living organisms?</string>
+    <string name="chemistryQuestions1">What is the chemical symbol for oxygen?</string>
+    <string name="chemistryQuestions2">What is the smallest unit of an element that retains its chemical properties?</string>
+    <string name="chemistryQuestions3">Which gas is responsible for the smell of rotten eggs?</string>
+    <string name="chemistryQuestions4">What is the chemical formula for water?</string>
+    <string name="chemistryQuestions5">Which element is a noble gas and is often used in balloons to make them float?</string>
+    <string name="chemistryQuestions6">What is the pH value of a neutral solution?</string>
+    <string name="chemistryQuestions7">Which gas is produced when baking soda (sodium bicarbonate) reacts with vinegar?</string>
+    <string name="chemistryQuestions8">What is the chemical symbol for gold?</string>
+    <string name="chemistryQuestions9">Which element is the most abundant in Earth\'s crust?</string>
+    <string name="chemistryQuestions10">What is the process of a substance changing from a solid directly into a gas called?</string>
+    <string name="biologianswer1">Photosynthesis</string>
+</resources>

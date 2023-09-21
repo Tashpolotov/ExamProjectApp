@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.OnBoardFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <ImageView
+            android:id="@+id/img_board"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/img_onboard"
+            />
+
+        <TextView
+            android:id="@+id/tv_board1"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:text="@string/do_your_exam_test_and_get_the_best_score"
+            android:textSize="22sp"
+            android:textColor="@color/onBoard_text_color"
+            app:layout_constraintTop_toBottomOf="@id/img_board"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_board2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/study_and_get_the_highest_score_in_your_class_the_exam_won_t_be_this_fun"
+            android:textSize="14sp"
+            android:textColor="@color/onBoard_text_color"
+            app:layout_constraintTop_toBottomOf="@id/tv_board1"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_get_started"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_board2"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/get_started"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/onBoard_text_color"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="280dp"
+            android:textColor="@color/white"
+
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

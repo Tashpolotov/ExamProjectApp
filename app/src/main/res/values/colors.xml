@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="onBoard_text_color">#0A1042</color>
+    <color name="selected_icon_color">#121953</color>
+    <color name="unselected_icon_color">#686A7B</color>
+    <color name="search_linear_color">#17FBFDFF</color>
+    <color name="search_color">#686A7B</color>
+    <color name="bg">#F2FFFFFF</color>
+    <color name="shape_home_bg">#1E276F</color>
+    <color name="red">#F30836</color>
+    <color name="green">#17C82F</color>
+
+</resources>
